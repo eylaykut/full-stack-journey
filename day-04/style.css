@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+    margin:0;
+    line-height: 1.6; /*metin satırları arasındaki yüksekliği belirler.*/
+}
+
+header{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    color: #b91c1c;
+    margin-top: 16px;
+    margin-bottom:8px;
+}
+
+h2 {
+    color: #374151;
+}
+
+a{
+    color:aqua;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7f1d1d;
+    text-decoration: underline;
+}
+
+header{
+    background-color: #111827;
+    color: white;
+    padding:24px;
+}
+
+header h1 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fca5a5;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+
+   /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left:24px;*/
+    /*kısa yazımı şu padding: 20px 24px; 
+    ilk değer üst ve alt son değer sağ ve sol */
+    padding:20px 24px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #111827;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+input,
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: #b91c1c;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover{
+    background-color: #7f1d1d;
+}
+
+input:focus,
+textarea:focus{
+    outline: 2px solid #fca5a5;
+    border-color:b91c1c;
+}
+
+.highlight{
+    border-left: 5px solid #b91c1c;
+    background-color: #fff7f7;
+}
+
+section h2{
+    margin-top:0;
+}
+
+section >:last-child{
+    margin-bottom: 0;
+}
+
+.container{
+    max-width:900px;
+    margin: 0 auto;
+}
+
+main {
+    width: calc(100% - 32px);
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+form p{
+    margin-top:0px;
+    margin-bottom:18px;
+}
+textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.info-box{
+    background-color: #fff7f7;
+    border-left: 4px solid #b91c1c;
+    padding:16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+
+}
+
+.info-box p{
+    margin:0;
+}
+
+nav{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.card-row{
+    display: grid;
+    gap:24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    margin-bottom: 24px;
+}
+
+.card-row section{
+    margin-bottom: 0;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:16px;
+    flex-wrap: wrap;
+}
+
+.footer-content p{
+    margin: 0;
+}
+
+@media(max-width:600px){
+    header{
+        padding:20px 16px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    section{
+        padding:16px;
+    }
+    .footer-content{
+        justify-content: center;
+        /*flexbox container olduğu için justify content ile hizalanır, flex itemları container içinde ortalar*/
+    }
+    footer{
+        text-align: center;
+    }
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    gap:16px;
+}
+
+.skill-card{
+    background-color: #d1d5db;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}

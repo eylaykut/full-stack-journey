@@ -10,23 +10,28 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#about">about me</a>
-            <a href="#hobilerim">hobilerim</a>
-            <a href="contact.html">iletişim</a>
-        </nav>
-        <h1> hello, this is eylulnaz. </h1>
-        <p> this is the second day of my full stack journey.</p>
+        <div class="container">
+                <nav>
+                    <a href="#about">about me</a>
+                    <a href="#hobilerim">hobilerim</a>
+                    <a href="contact.html">iletişim</a>
+                    <a href="#skills">yeteneklerim</a>
+                    </nav>
+            <h1> hello, this is eylulnaz. </h1>
+            <p> this is the fourth day of my full stack journey.</p>
+        </div>
     </header>
     <main>
-        <section id="about">
+        <div class="card-row">
+            <section id="about" class="highlight">
             <h2>about me</h2>
             <p>i am a ceng graduate & learning web programming.</p>
-        </section>
-        <section class="highlight">
+            </section>
+            <section class="highlight">
             <h2>my goal</h2>
             <p>i want to become a full stack engineer and build my own web apps</p>
-        </section>
+            </section>
+        </div>
 
         <section class="highlight">
             <h2> öğreneğim konular </h2>
@@ -82,10 +87,26 @@
             <li>2. günü yap.</li>
         </ol>
         </section>
+
+        <section id="skills">
+            <h2>Yeteneklerim</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">Flexbox</div>
+                <div class="skill-card">Grid</div>
+                <div class="skill-card">Responsive Design</div>
+                <div class="skill-card">Git&GitHub</div>
+
+            </div>
+
+        </section>
     </main>
     <footer>
-        <p>bu sayfa benim tarafımdan hazırlandı</p>
-        <p>full stack journey day 2 </p>
+       <div class="container footer-content">
+         <p>bu sayfa benim tarafımdan hazırlandı</p>
+         <p>full stack journey day 4 </p>
+       </div>
     </footer>
 </body>
 
