@@ -135,3 +135,68 @@ const basariOran = toplamGecen / notes.length *100;
 console.log("Geçen:",toplamGecen);
 console.log("Kalan:", toplamKalan);
 console.log("Başarı Oranı:", basariOran);
+
+
+
+const mesajAlani=document.getElementById("mesaj");
+const buton=document.getElementById("mesajButonu");
+console.log(mesajAlani);
+console.log(buton);
+
+buton.addEventListener("click", function(){
+    console.log("butona tıklandı!");
+    mesajAlani.classList.toggle("aktif");
+    if(mesajAlani.classList.contains("aktif")){
+        mesajAlani.textContent="değişti.";
+    }else{
+        mesajAlani.textContent="Butona henüz basılmadı";
+    }
+    
+});
+
+const sayacAlani = document.getElementById("sayac");
+const artirButonu = document.getElementById("artirButonu");
+let sayacDegeri = 0;
+
+artirButonu.addEventListener("click", function(){
+    sayacDegeri++;
+    sayacAlani.textContent=sayacDegeri;
+});
+
+const azaltButonu = document.getElementById("azaltButonu");
+const sifirButonu = document.getElementById("sifirButonu");
+
+azaltButonu.addEventListener("click", function(){
+    if(sayacDegeri>0){
+        sayacDegeri = sayacDegeri-1;
+        sayacAlani.textContent = sayacDegeri;
+    }
+});
+
+sifirButonu.addEventListener("click", function(){
+    sayacDegeri=0;
+    sayacAlani.textContent=sayacDegeri;
+});
+
+
+const isimInput = document.getElementById("isimInput");
+const selamButonu = document.getElementById("selamButonu");
+const selamMesaji = document.getElementById("selamMesaji");
+
+
+selamButonu.addEventListener("click", function(){
+    const girilenIsim = isimInput.value.trim();
+    if(girilenIsim===""){
+        selamMesaji.textContent="Lütfen isim giriniz.";
+    }else{
+        selamMesaji.textContent = "Merhaba " +girilenIsim;
+    } 
+});
+
+
+isimInput.addEventListener("keydown", function(event){
+    if(event.key === "Enter"){
+        selamButonu.click();
+    }
+
+});
