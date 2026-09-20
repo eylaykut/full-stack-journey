@@ -1,0 +1,83 @@
+.tamamlandi{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.todo-app{
+    background-color: white;
+    padding: 20px 24px;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.16);
+    max-width: 500px;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+}
+
+#gorevInput{
+    width: 70%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#ekleButonu{
+    padding:12px;
+    background-color: darkgreen;
+    color:white;
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+#ekleButonu:hover{
+    background-color: green;
+}
+
+#gorevListesi{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#gorevListesi li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: bisque;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.tamamla-butonu{
+    padding:8px 12px;
+    border-radius: 6px;
+    border:none;
+    cursor:pointer;
+    background-color: green;
+    color: white;
+    margin-left: auto;
+}
+
+.sil-butonu{
+    padding:8px 12px;
+    border-radius: 6px;
+    border:none;
+    cursor:pointer;
+    background-color: red;
+    color:white;
+}
