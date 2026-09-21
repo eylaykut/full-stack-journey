@@ -25,3 +25,14 @@
 - Yalnızca geçen öğrencileri filtreleme
 - Yalnızca kalan öğrencileri filtreleme
 - Responsive Grid kart düzeni
+
+## Ek Çalışma - Form Validation
+
+- Formun `submit` olayını dinleme
+- `event.preventDefault()` ile sayfa yenilenmesini engelleme
+- Input değerlerini JavaScript ile okuma
+- Ad, e-posta ve şifre alanlarını doğrulama
+- Alanlara özel hata mesajları gösterme
+- `formGecerli` değişkeniyle form durumunu takip etme
+- Başarılı kayıttan sonra formu `reset()` ile temizleme
+- Responsive kayıt formu tasarlama
