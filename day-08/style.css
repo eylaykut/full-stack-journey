@@ -1,0 +1,46 @@
+.gecti{
+    color:green;
+}
+
+.kaldi{
+    color:red;
+}
+
+#ogrList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:16px;
+    max-width: 900px;
+    margin:0 auto;    
+}
+
+.ogrenci-karti{
+    background-color: azure;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-align: left;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin:0;
+    text-align: center;
+
+}
+
+section button{
+    padding: 6px;
+    background-color: dimgray;
+    color:white;
+    border:none;
+    border-radius: 6px;
+    cursor:pointer;
+    margin:10px;
+}
+
+section button:hover{
+    background-color: gray;
+}
