@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #1f2937;
+    background-color: #f3f4f6;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: #111827;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: 3px solid rgba(37, 99, 235, 0.2);
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #2563eb;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+form button[type="submit"] {
+    width: 100%;
+}
+
+#harcamaListesi {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+#harcamaListesi li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    padding: 14px 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.sil-butonu {
+    margin-left: auto;
+    padding: 8px 12px;
+    background-color: #dc2626;
+}
+
+.sil-butonu:hover {
+    background-color: #b91c1c;
+}
+
+#toplamTutar {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 16px;
+    color: white;
+    background-color: #111827;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#tumunuSilButonu {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #7f1d1d;
+}
+
+#tumunuSilButonu:hover {
+    background-color: #991b1b;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    #harcamaListesi li {
+        flex-wrap: wrap;
+    }
+
+    .sil-butonu {
+        width: 100%;
+        margin-left: 0;
+    }
+}
