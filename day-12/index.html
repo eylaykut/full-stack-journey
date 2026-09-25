@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 12 - İş Başvuru Takip Uygulaması</title>
+</head>
+
+<body>
+    <h1>İş Başvuru Takip Uygulaması</h1>
+    <form id="basvuruFormu">
+        <label for="sirketAdi">Şirket Adı</label>
+        <input type="text" id="sirketAdi" placeholder="Örneğin: OpenAI">
+
+        <label for="pozisyon">Pozisyon</label>
+        <input type="text" id="pozisyon" placeholder="Örneğin: Junior Frontend Developer">
+
+        <label for="basvuruTarihi">Başvuru Tarihi</label>
+        <input type="date" id="basvuruTarihi">
+
+        <label for="basvuruDurumu">Başvuru Durumu</label>
+        <select id="basvuruDurumu">
+            <option value="" disabled selected>Durum seçiniz</option>
+            <option value="basvuruldu">Başvuruldu</option>
+            <option value="mulakat">Mülakat</option>
+            <option value="olumsuz">Olumsuz</option>
+            <option value="teklif">Teklif</option>
+        </select>
+        <button type="submit">Başvuru Ekle</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
