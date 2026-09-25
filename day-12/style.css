@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #1f2937;
+    background-color: #f3f4f6;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: #111827;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#basvuruFormu {
+    width: 100%;
+    max-width: 550px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    font: inherit;
+}
+
+input:focus,
+select:focus {
+    border-color: #2563eb;
+    outline: 3px solid rgba(37, 99, 235, 0.2);
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #2563eb;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#basvuruFormu button[type="submit"] {
+    width: 100%;
+}
+
+.ozet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 750px;
+    margin: 32px auto;
+}
+
+.ozet p {
+    margin: 0;
+    padding: 18px;
+    color: white;
+    background-color: #111827;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.filtre-alani {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 28px;
+}
+
+#basvuruListesi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.basvuru-karti {
+    padding: 18px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.basvuru-karti h3 {
+    margin-top: 0;
+}
+
+.basvuru-karti p {
+    margin: 8px 0;
+}
+
+.durum-basvuruldu {
+    border-left: 6px solid #2563eb;
+    background-color: #eff6ff;
+}
+
+.durum-mulakat {
+    border-left: 6px solid #d97706;
+    background-color: #fffbeb;
+}
+
+.durum-olumsuz {
+    border-left: 6px solid #dc2626;
+    background-color: #fef2f2;
+}
+
+.durum-teklif {
+    border-left: 6px solid #16a34a;
+    background-color: #f0fdf4;
+}
+
+.sil-butonu {
+    width: 100%;
+    margin-top: 12px;
+    background-color: #dc2626;
+}
+
+.sil-butonu:hover {
+    background-color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #basvuruFormu {
+        padding: 18px;
+    }
+
+    .ozet {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #basvuruListesi {
+        grid-template-columns: 1fr;
+    }
+}

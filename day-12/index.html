@@ -10,26 +10,75 @@
 
 <body>
     <h1>İş Başvuru Takip Uygulaması</h1>
-    <form id="basvuruFormu">
-        <label for="sirketAdi">Şirket Adı</label>
-        <input type="text" id="sirketAdi" placeholder="Örneğin: OpenAI">
 
-        <label for="pozisyon">Pozisyon</label>
-        <input type="text" id="pozisyon" placeholder="Örneğin: Junior Frontend Developer">
+    <main>
+        <form id="basvuruFormu">
+            <label for="sirketAdi">Şirket Adı</label>
+            <input type="text" id="sirketAdi" placeholder="Örneğin: OpenAI">
 
-        <label for="basvuruTarihi">Başvuru Tarihi</label>
-        <input type="date" id="basvuruTarihi">
+            <label for="pozisyon">Pozisyon</label>
+            <input type="text" id="pozisyon" placeholder="Örneğin: Junior Frontend Developer">
 
-        <label for="basvuruDurumu">Başvuru Durumu</label>
-        <select id="basvuruDurumu">
-            <option value="" disabled selected>Durum seçiniz</option>
-            <option value="basvuruldu">Başvuruldu</option>
-            <option value="mulakat">Mülakat</option>
-            <option value="olumsuz">Olumsuz</option>
-            <option value="teklif">Teklif</option>
-        </select>
-        <button type="submit">Başvuru Ekle</button>
-    </form>
+            <label for="basvuruTarihi">Başvuru Tarihi</label>
+            <input type="date" id="basvuruTarihi">
+
+            <label for="basvuruDurumu">
+                Başvuru Durumu
+            </label>
+
+            <select id="basvuruDurumu">
+                <option value="" disabled selected>
+                    Durum seçiniz
+                </option>
+                <option value="basvuruldu">
+                    Başvuruldu
+                </option>
+                <option value="mulakat">
+                    Mülakat
+                </option>
+                <option value="olumsuz">
+                    Olumsuz
+                </option>
+                <option value="teklif">
+                    Teklif
+                </option>
+            </select>
+
+            <button type="submit">Başvuru Ekle</button>
+        </form>
+
+        <section class="ozet" aria-label="Başvuru özeti">
+            <p id="toplamBasvuru">Toplam: 0</p>
+            <p id="mulakatSayisi">Mülakat: 0</p>
+            <p id="teklifSayisi">Teklif: 0</p>
+        </section>
+
+        <div class="filtre-alani">
+            <label for="durumFiltresi">
+                Duruma Göre Filtrele
+            </label>
+
+            <select id="durumFiltresi">
+                <option value="tumu">Tümü</option>
+                <option value="basvuruldu">
+                    Başvuruldu
+                </option>
+                <option value="mulakat">
+                    Mülakat
+                </option>
+                <option value="olumsuz">
+                    Olumsuz
+                </option>
+                <option value="teklif">
+                    Teklif
+                </option>
+            </select>
+        </div>
+
+        <h2>Başvurularım</h2>
+
+        <div id="basvuruListesi"></div>
+    </main>
 
     <script src="script.js"></script>
 </body>
