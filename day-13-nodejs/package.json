@@ -1,0 +1,13 @@
+{
+  "name": "day-13-nodejs",
+  "version": "1.0.0",
+  "description": "Node.js ve npm temel çalışmas",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["nodejs", "npm"],
+  "author": "Eylülnaz Aykut",
+  "license": "ISC",
+  "type": "commonjs"
+}
